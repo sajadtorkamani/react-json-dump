@@ -11,5 +11,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/sajadtorkamani/react-json-dump.git"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
   }
 }
