@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 
 interface Props {
-  title?: string;
+  label?: string;
   value: object;
-  expanded?: boolean;
+  expand?: boolean;
 }
 
 export const Dump: React.FC<Props> = ({
-  title = "Dump",
+  label = "Dump",
   value,
-  expanded = true,
+  expand = true,
 }) => {
-  const [isExpanded, setIsExpanded] = useState<boolean>(expanded);
+  const [isExpanded, setIsExpanded] = useState<boolean>(expand);
 
   function toggleValues() {
     setIsExpanded(!isExpanded);
@@ -29,7 +29,7 @@ export const Dump: React.FC<Props> = ({
         style={{ alignItems: "center", cursor: "pointer", display: "flex" }}
         onClick={toggleValues}
       >
-        {title}
+        {label}
         <span style={{ color: "#393939", fontSize: "10px", marginLeft: "7px" }}>
           {isExpanded ? "▲" : "▼"}
         </span>

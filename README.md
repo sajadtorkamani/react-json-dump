@@ -13,11 +13,10 @@ import { Dump } from 'react-json-dump'
 
 const App = () => (
   <>
-    {/* Without title */}
     <Dump data={{ name: 'John Doe', age: 30 }} />
 
-    {/* With title */}
-    <Dump title="PersonRecord" data={{ name: 'John Doe', age: 30 }} />
+    {/* With label */}
+    <Dump label="PersonRecord" data={{ name: 'John Doe', age: 30 }} />
   </>
 )
 ```
