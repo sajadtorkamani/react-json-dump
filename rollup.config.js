@@ -1,5 +1,5 @@
-import typescript from "@rollup/plugin-typescript";
-import pkg from "./package.json";
+import typescript from '@rollup/plugin-typescript'
+import pkg from './package.json'
 
 export default [
   // CommonJS (for Node) and ES module (for bundlers) build.
@@ -9,11 +9,12 @@ export default [
   // an array for the `output` option, where we can specify
   // `file` and `format` for each target)
   {
-    input: "src/Dump.tsx",
+    input: 'src/Dump.tsx',
+    external: 'react',
     plugins: [typescript()],
     output: [
-      { file: pkg.main, format: "cjs" },
-      { file: pkg.module, format: "es" },
+      { file: pkg.main, format: 'cjs' },
+      { file: pkg.module, format: 'es' },
     ],
   },
-];
+]
