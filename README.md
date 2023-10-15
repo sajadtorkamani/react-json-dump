@@ -8,6 +8,8 @@ npm install react-json-dump
 
 ### Usage
 
+[See demo](https://codesandbox.io/p/sandbox/github/sajadtorkamani/react-json-dump-demo/tree/main)
+
 ```typescript jsx
 import { Dump } from 'react-json-dump'
 
