@@ -1,16 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 interface Props {
   title?: string;
-  value: any;
-  expanded?: boolean
+  value: object;
+  expanded?: boolean;
 }
 
-const Dump: React.FC<Props> = ({ title = "Dump", value, expanded = true }) => {
-  const [isExpanded, setIsExpanded] = useState<boolean>(expanded)
+export const Dump: React.FC<Props> = ({
+  title = "Dump",
+  value,
+  expanded = true,
+}) => {
+  const [isExpanded, setIsExpanded] = useState<boolean>(expanded);
 
   function toggleValues() {
-    setIsExpanded(!isExpanded)
+    setIsExpanded(!isExpanded);
   }
 
   return (
@@ -22,22 +26,20 @@ const Dump: React.FC<Props> = ({ title = "Dump", value, expanded = true }) => {
       }}
     >
       <div
-        style={{ alignItems: 'center', cursor: 'pointer', display: 'flex' }}
+        style={{ alignItems: "center", cursor: "pointer", display: "flex" }}
         onClick={toggleValues}
       >
         {title}
-        <span style={{ color: '#393939', fontSize: '10px', marginLeft: '7px' }}>
-          {isExpanded ? '▲' : '▼'}
+        <span style={{ color: "#393939", fontSize: "10px", marginLeft: "7px" }}>
+          {isExpanded ? "▲" : "▼"}
         </span>
       </div>
 
       {isExpanded && (
-        <pre style={{ marginTop: '10px' }}>
+        <pre style={{ marginTop: "10px" }}>
           {JSON.stringify(value, null, 2)}
         </pre>
       )}
     </div>
-  )
-}
-
-export default Dump
+  );
+};
