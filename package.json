@@ -1,6 +1,6 @@
 {
   "name": "react-json-dump",
-  "version": "0.0.4-alpha",
+  "version": "0.0.4",
   "description": "Dump component",
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
