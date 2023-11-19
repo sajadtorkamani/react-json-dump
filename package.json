@@ -2,6 +2,10 @@
   "name": "react-json-dump",
   "version": "0.0.4-alpha",
   "description": "Dump component",
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
+    "dev": "rollup -c -w --bundleConfigAsCjs"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sajadtorkamani/react-json-dump.git"
@@ -14,10 +18,6 @@
   "homepage": "https://github.com/sajadtorkamani/react-json-dump#readme",
   "main": "dist/react-json-dump.cjs.js",
   "module": "dist/react-json-dump.esm.js",
-  "scripts": {
-    "build": "rollup -c --bundleConfigAsCjs",
-    "dev": "rollup -c -w --bundleConfigAsCjs"
-  },
   "files": [
     "dist"
   ],

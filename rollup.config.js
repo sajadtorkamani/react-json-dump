@@ -11,7 +11,7 @@ export default [
   {
     input: 'src/Dump.tsx',
     external: 'react',
-    plugins: [typescript()],
+    plugins: [typescript({})],
     output: [
       { file: pkg.main, format: 'cjs' },
       { file: pkg.module, format: 'es' },
