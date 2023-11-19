@@ -12,6 +12,7 @@
   },
   "author": "Sajad Torkamani <sajadtorkamani1@gmail.com>",
   "license": "MIT",
+  "types": "dist/Dump.d.ts",
   "bugs": {
     "url": "https://github.com/sajadtorkamani/react-json-dump/issues"
   },
